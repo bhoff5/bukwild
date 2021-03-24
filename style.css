@@ -189,6 +189,7 @@ letter-spacing: 1px;
     z-index: -100;
     list-style-type: none;
     margin: 0;
+    overflow: hidden;
 }
 .cb-slideshow:after { 
     content: '';
