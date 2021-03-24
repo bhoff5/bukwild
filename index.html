@@ -78,11 +78,13 @@
 <script>
     let intViewportHeight = window.innerHeight;
     let intViewportWidth = window.innerWidth;
+    let viewportRatio = intViewportWidth / intViewportHeight
 
     var el = document.getElementById('white-box');
 function toggle(){
-    if( intViewportHeight >= 800 && intViewportWidth >= 600){
+    if( viewportRatio >= 2){
         el.className = 'row pinned';
+        console.log(viewportRatio)
     }else{
         el.className = 'row unpinned';
     }
